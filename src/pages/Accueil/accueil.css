@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
+
+.bg-img {
+  background-color:  #F4DDCB; 
+  /*background-image: url("../../assets/88628.jpg");*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.container {
+  background-color: #FBEEE6;
+}
+
+.bg-left {
+  background-color: #B59287;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inknut Antiqua', serif;
+}
+
+.custom-btn {
+  background-color: #FADB8F;
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #f7c860;
+}
+
+input:focus, input:hover {
+  border-color: transparent;
+  outline: none;
+  box-shadow: none;
+}
+
+
