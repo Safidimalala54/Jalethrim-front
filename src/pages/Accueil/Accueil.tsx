@@ -3,7 +3,7 @@ import "./accueil.css";
 
 import CardImage from "../../Components/CardImage";
 import CardContent from "../../Components/CardContent";
-//import product from "../../data";
+import product from "../../data";
 // import axios from "axios";
 
 type Product = {
@@ -28,12 +28,15 @@ function Accueil() {
   useEffect(() => {
     const fetchAPIFunction = async () => {
       try {
-        // const getProduct=await axios.get("http.......")//FETCH WITH AXIOS
-        const response = await fetch("http://localhost:3000/gondor_chic/produit-du-jour");
+        //const getProduct = await axios.get("http......."); //FETCH WITH AXIOS
+        const response = await fetch(
+          "http://localhost:3000/gondor_chic/produit-du-jour"
+        );
         const data = await response.json();
-        
+
         if (Array.isArray(data) && data.length > 0) {
-          setProduitDuJour(data[0]);
+          // setProduitDuJour(data[0]);
+          setProduitDuJour(product[0]);
         }
       } catch (e) {
         console.log(e);
