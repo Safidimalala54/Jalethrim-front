@@ -6,6 +6,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import Accueil from "./pages/Accueil/Accueil";
+import AccueilPerso from "./pages/Accueil/AccueilPerso";
 
 function App() {
   const myRouter = createBrowserRouter(
@@ -13,6 +14,7 @@ function App() {
       <>
         <Route path="/" element={<Navigate to="accueil" replace />} />
         <Route element={<Accueil />} path="/accueil" />
+        <Route element={<AccueilPerso />} path="accueilperso" />
       </>
     )
   );
